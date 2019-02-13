@@ -4,13 +4,13 @@
 
 <target name ="compile">
 
-<javac srcdir="./src/godandstars"   destdir = "./classes" debug="true"  includeantruntime ="false">
+<javac srcdir="./src/godandstars"   destdir = "./class" debug="true"  includeantruntime ="false">
 
 </javac>
 </target>
 <target name ="jar" depends= "compile">
 <jar destfile =".result.jar">
-<fileset dir ="./classes">
+<fileset dir ="./class">
 </fileset>
 </jar>
 </target>
