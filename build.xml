@@ -1,9 +1,8 @@
-<project  default ="compile">
-
-
-
+<project default="compile">
 <target name ="compile">
-
+  
+  
+<mkdir dir ="./class"/>
 <javac srcdir="./src/godandstars"   destdir = "./class" debug="true"  includeantruntime ="false">
 
 </javac>
