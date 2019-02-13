@@ -1,11 +1,10 @@
-
 <project  name ="xgbh" default ="compile">
 <property name ="src.godandstars.dir" location= "./src/godandstars"/>
-<property name ="class1.dir" location ="."/>
+<property name ="class1.dir" location ="./classes"/>
 <property name ="class2.file" location ="./result.jar"/>
 <target name ="compile">
 <mkdir dir =" ${class1.dir}"/>
-<javac srcdir="${src1.godandstars.dir}"   destdir ="${class1.dir}" debug="true"  includeantruntime ="false">
+<javac srcdir="${src.godandstars.dir}"   destdir ="${class1.dir}" debug="true"  includeantruntime ="false">
 
 </javac>
 </target>
