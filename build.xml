@@ -3,14 +3,14 @@
 <property name ="clase"  location ="."/>
 <property name ="clase2" location ="./result.jar"/>
 <target name ="compile">
-<mkdir dir =" ${class}"/>
-<javac srcdir="${src1}"   destdir ="${class}" debug="true"  includeantruntime ="false">
+<mkdir dir =" ${clase}"/>
+<javac srcdir="${src1}"   destdir ="${clase}" debug="true"  includeantruntime ="true">
 
 </javac>
 </target>
 <target name ="jar" depends= "compile">
-<jar destfile ="${class2}">
-<fileset dir ="${class}">
+<jar destfile ="${clase2}">
+<fileset dir ="${clase}">
 </fileset>
 </jar>
 </target>
