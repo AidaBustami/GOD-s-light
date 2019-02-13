@@ -1,6 +1,18 @@
-<project  name ="kll" default ="compile">
 
+<project  name ="xgbh" default ="compile">
+<property name ="src.godandstars.dir" location= "./src/godandstars"/>
+<property name ="class1.dir" location ="."/>
+<property name ="class2.file" location ="./result.jar"/>
 <target name ="compile">
-<echo>ghg</echo>
+<mkdir dir =" ${class1.dir}"/>
+<javac srcdir="${src1.godandstars.dir}"   destdir ="${class1.dir}" debug="true"  includeantruntime ="false">
+
+</javac>
+</target>
+<target name ="jar" depends= "compile">
+<jar destfile ="${class2.file}">
+<fileset dir ="${class1.dir}">
+</fileset>
+</jar>
 </target>
 </project>
