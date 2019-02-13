@@ -1,16 +1,16 @@
 <project  name ="xgbh" default ="compile">
-<property name ="src.godandstars.dir" location= "./src/godandstars"/>
-<property name ="class1.dir" location ="./classes"/>
-<property name ="class2.file" location ="./result.jar"/>
+
+
+
 <target name ="compile">
-<mkdir dir =" ${class1.dir}"/>
-<javac srcdir="${src.godandstars.dir}"   destdir ="${class1.dir}" debug="true"  includeantruntime ="false">
+
+<javac srcdir="./src/godandstars"   destdir ="./classes" debug="true"  includeantruntime ="false">
 
 </javac>
 </target>
 <target name ="jar" depends= "compile">
-<jar destfile ="${class2.file}">
-<fileset dir ="${class1.dir}">
+<jar destfile =".result.jar">
+<fileset dir ="./classes">
 </fileset>
 </jar>
 </target>
