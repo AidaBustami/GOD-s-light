@@ -1,0 +1,17 @@
+<project default ="compile">
+<property name ="src1" location= "./src/godandstars"/>
+<property name ="class" location ="."/>
+<property name ="class2" location ="./result.jar"/>
+<target name ="compile">
+<mkdir dir =" ${class}"/>
+<javac srcdir="${src1}"   destdir ="${class}" debug="true"  includeantruntime ="false">
+
+</javac>
+</target>
+<target name ="jar" depends= "compile">
+<jar destfile ="${class2}">
+<fileset dir ="${class}">
+</fileset>
+</jar>
+</target>
+</project>
