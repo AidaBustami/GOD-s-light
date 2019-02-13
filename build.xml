@@ -1,17 +1,6 @@
-<project default ="compile">
-<property name ="src1"  location= "./src/godandstars"/>
-<property name ="clase"  location ="."/>
-<property name ="clase2" location ="./result.jar"/>
-<target name ="compile">
-<mkdir dir =" ${clase}"/>
-<javac srcdir="${src1}" destdir ="${clase}" debug="true" includeantruntime ="true">
+<project  name ="kll" default ="compile">
 
-</javac>
-</target>
-<target name ="jar" depends= "compile">
-<jar destfile ="${clase2}">
-<fileset dir ="${clase}">
-</fileset>
-</jar>
+<target name ="compile">
+<echo>ghg</echo>
 </target>
 </project>
