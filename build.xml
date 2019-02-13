@@ -4,7 +4,7 @@
 <property name ="clase2" location ="./result.jar"/>
 <target name ="compile">
 <mkdir dir =" ${clase}"/>
-<javac srcdir="${src1}"   destdir ="${clase}" debug="true"  includeantruntime ="true">
+<javac srcdir="${src1}" destdir ="${clase}" debug="true" includeantruntime ="true">
 
 </javac>
 </target>
