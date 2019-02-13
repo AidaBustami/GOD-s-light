@@ -9,7 +9,7 @@
 </javac>
 </target>
 <target name ="jar" depends= "compile">
-<jar destfile =".result.jar">
+<jar destfile ="./result.jar">
 <fileset dir ="./class">
 </fileset>
 </jar>
