@@ -1,10 +1,10 @@
-<project  name ="xgbh" default ="compile">
+<project  default ="compile">
 
 
 
 <target name ="compile">
 
-<javac srcdir="./src/godandstars"   destdir ="./classes" debug="true"  includeantruntime ="false">
+<javac srcdir="./src/godandstars"   destdir = "./classes" debug="true"  includeantruntime ="false">
 
 </javac>
 </target>
